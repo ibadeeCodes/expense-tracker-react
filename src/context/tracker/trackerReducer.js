@@ -23,7 +23,7 @@ export default (state, action) => {
         return {
           ...state,
           transactions: state.transactions.filter(
-            (transaction) => transaction.id != action.payload.id
+            (transaction) => transaction.id !== action.payload.id
           ),
           totalIncome: state.totalIncome - parseInt(action.payload.value),
           balance: state.balance - parseInt(action.payload.value),
@@ -32,7 +32,7 @@ export default (state, action) => {
         return {
           ...state,
           transactions: state.transactions.filter(
-            (transaction) => transaction.id != action.payload.id
+            (transaction) => transaction.id !== action.payload.id
           ),
           totalExpense: state.totalExpense - parseInt(action.payload.value),
           balance: state.balance + parseInt(action.payload.value),
