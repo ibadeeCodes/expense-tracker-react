@@ -2,7 +2,6 @@ import Button from '@material-ui/core/Button'
 import { makeStyles } from '@material-ui/core/styles'
 import React, { Fragment, useState, useContext } from 'react'
 import { Select, MenuItem, InputLabel } from '@material-ui/core'
-import Icon from '@material-ui/core/Icon'
 import TrackerContext from '../context/tracker/trackerContext'
 import Data from '../components/Data'
 

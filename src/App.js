@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react'
 
 import '@material-ui/core'
-import { Button, Typography, Container } from '@material-ui/core'
+import { Container } from '@material-ui/core'
 import FormTracker from './components/FormTracker'
 import TrackerState from './context/tracker/TrackerState'
 import './App.css'
