@@ -1,26 +1,21 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Fragment } from 'react'
 
-function App() {
+import '@material-ui/core'
+import { Button, Typography, Container } from '@material-ui/core'
+import FormTracker from './components/FormTracker'
+import TrackerState from './context/tracker/TrackerState'
+import './App.css'
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <TrackerState>
+      <Fragment>
+        <Container maxWidth='sm'>
+          <FormTracker />
+        </Container>
+      </Fragment>
+    </TrackerState>
+  )
 }
 
-export default App;
+export default App
